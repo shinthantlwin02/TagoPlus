@@ -7,9 +7,9 @@ import { Link, NavLink } from "react-router-dom";
 import { BsChevronDown, BsFillMoonFill } from "react-icons/bs";
 
 const Index = () => {
-  const banner1 = BannerContent?.find((data) => data.id === 1);
-  const banner2 = BannerContent?.find((data) => data.id === 2);
-  const banner3 = BannerContent?.find((data) => data.id === 3);
+  const banner1 = BannerContent.find((data) => data.id === 1);
+  const banner2 = BannerContent.find((data) => data.id === 2);
+  const banner3 = BannerContent.find((data) => data.id === 3);
   const [bannerContent, setBannerContent] = useState(banner1);
   const subTitleParagraph = bannerContent?.subTitle.split("\n");
 
@@ -160,7 +160,7 @@ const Index = () => {
         </div>
 
         {/* banner */}
-        <div className='h-full w-full flex justify-between items-center px-[30px] lg:px-[100px]'>
+        <div className='h-full w-full flex justify-between items-center px-[30px] lg:px-[100px]  2xl:px-[120px]'>
           <div className='w-[60%] lg:w-full ps-0 lg:ps-5'>
             <h1 className='text-[64px] 2xl:text-[80px] -tracking-[4px] font-bold pb-2'>
               {bannerContent?.title}

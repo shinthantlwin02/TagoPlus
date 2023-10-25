@@ -6,7 +6,7 @@ const Index = () => {
   const row1 = MainBusinesses.slice(0, 2);
   const row2 = MainBusinesses.slice(2, 6);
   return (
-    <div className=' px-[30px]  lg:px-[100px] '>
+    <div className=' px-[30px]  lg:px-[100px]  2xl:px-[120px]'>
       <h1 className='text-[48px] 2xl:text-[64px] font-bold -tracking-[8px] pt-10 pb-4'>
         타고플러스의 주요 사업 및 보유 솔루션
       </h1>
