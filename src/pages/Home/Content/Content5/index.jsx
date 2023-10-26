@@ -3,7 +3,7 @@ import { Languages } from "../../../../data";
 
 const Index = () => {
   return (
-    <div className='w-full px-[30px]  lg:px-[100px] py-20'>
+    <div className='w-full px-[30px] lg:px-[100px] 2xl:px-[120px] py-20'>
       <h1 className='text-[48px] 2xl:text-[64px] font-bold pb-4'>
         주요보유기술
       </h1>
