@@ -8,7 +8,7 @@ const Index = () => {
   return (
     <div className='flex flex-col-reverse lg:flex-row lg:justify-between gap-3 py-10 w-full px-[30px]  lg:px-[100px] 2xl:px-[120px]'>
       {/* box 1 */}
-      <div className='border border-neutral-300 px-4 py-10 w-full lg:w-1/2  h-[700px]'>
+      <div className='border border-neutral-300 px-4 py-10 w-full lg:w-1/2 h-auto  md:h-[700px]'>
         <div className='flex justify-between items-center'>
           <h1 className='text-[48px] font-bold'>공지사항</h1>
           <span

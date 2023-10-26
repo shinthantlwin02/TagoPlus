@@ -114,7 +114,6 @@ const Index = () => {
                   <BsChevronDown className='text-2xl' />
                 </h1>
               </div>
-              <BsChevronDown className='text-2xl' />
             </h1>
           </div>
           <div className='w-full h-[50px]'>
