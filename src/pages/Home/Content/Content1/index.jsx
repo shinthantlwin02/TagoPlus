@@ -7,14 +7,20 @@ import { Link, NavLink } from "react-router-dom";
 import { BsChevronDown, BsFillMoonFill } from "react-icons/bs";
 
 const Index = () => {
-  const banner1 = BannerContent.find((data) => data.id === 1);
-  const banner2 = BannerContent.find((data) => data.id === 2);
-  const banner3 = BannerContent.find((data) => data.id === 3);
+  const banner1 = BannerContent?.find((data) => data.id === 1);
+  const banner2 = BannerContent?.find((data) => data.id === 2);
+  const banner3 = BannerContent?.find((data) => data.id === 3);
   const [bannerContent, setBannerContent] = useState(banner1);
   const subTitleParagraph = bannerContent?.subTitle.split("\n");
 
   const [mobileNav, setMobileNav] = useState(false);
   const [accordian, setaccordian] = useState(false);
+
+  const bannerBgStyle = {
+    backgroundImage: `url(${bannerContent.background})`,
+    backgroundSize: 'cover',  // Optional: Adjust the background size
+    backgroundPosition: 'center center',  // Optional: Adjust the background position
+  };
 
   return (
     <>
@@ -65,7 +71,7 @@ const Index = () => {
             } `}
             onClick={() => setaccordian(!accordian)}
           >
-            <h1 className='mb-5 flex gap-2 items-center font-bold text-[48px]'>
+            <h1 className='mb-5 flex gap-2 items-center font-bold text-lg sm:text-[48px]'>
               몽골 IT 아웃소싱
               <BsChevronDown
                 className={`transition-all duration-300 text-2xl ${
@@ -95,15 +101,15 @@ const Index = () => {
             </div>
           </div>
           <div className='w-full h-[50px]'>
-            <h1 className='mb-5 flex gap-2 items-center font-bold text-[48px]'>
+            <h1 className='mb-5 flex gap-2 items-center font-bold text-lg sm:text-[48px]'>
               미얀마 퍼블리셔 아웃소싱
               <BsChevronDown className='text-2xl' />
             </h1>
           </div>
           <div className='w-full h-[50px]'>
-            <h1 className='mb-5 flex gap-2 items-center font-bold text-[48px]'>
+            <h1 className='mb-5 flex gap-2 items-center font-bold text-lg sm:text-[48px]'>
               <div className='w-full'>
-                <h1 className='mb-5 flex gap-2 items-center font-bold text-[48px]'>
+                <h1 className='mb-5 flex gap-2 items-center font-bold text-lg sm:text-[48px]'>
                   미얀마 퍼블리셔 아웃소싱
                   <BsChevronDown className='text-2xl' />
                 </h1>
@@ -112,19 +118,19 @@ const Index = () => {
             </h1>
           </div>
           <div className='w-full h-[50px]'>
-            <h1 className='mb-5 flex gap-2 items-center font-bold text-[48px]'>
+            <h1 className='mb-5 flex gap-2 items-center font-bold text-lg sm:text-[48px]'>
               포트폴리오
               <BsChevronDown className='text-2xl' />
             </h1>
           </div>
           <div className='w-full h-[50px]'>
-            <h1 className='mb-5 flex gap-2 items-center font-bold text-[48px]'>
+            <h1 className='mb-5 flex gap-2 items-center font-bold text-lg sm:text-[48px]'>
               고객센터
               <BsChevronDown className='text-2xl' />
             </h1>
           </div>
           <div className='w-full h-[50px]'>
-            <h1 className='mb-5 flex gap-2 items-center font-bold text-[48px]'>
+            <h1 className='mb-5 flex gap-2 items-center font-bold text-lg sm:text-[48px]'>
               회사소개
               <BsChevronDown className='text-2xl' />
             </h1>
@@ -134,7 +140,8 @@ const Index = () => {
 
       {/* banner */}
       <div
-        className={`${bannerContent?.background} w-full h-[1000px] 2xl:h-[1080px] py-10 flex flex-col justify-between text-white`}
+      style={bannerBgStyle}
+        className={` w-full h-[1000px] 2xl:h-[1080px] py-10 flex flex-col justify-between text-white`}
       >
         {/* navbar */}
         <div className='hidden lg:block mx-[30px] lg:mx-[80px]'>
@@ -160,7 +167,7 @@ const Index = () => {
         </div>
 
         {/* banner */}
-        <div className='h-full w-full flex justify-between items-center px-[30px] lg:px-[100px]  2xl:px-[120px]'>
+        <div className='h-full w-full flex justify-between items-center px-[30px] lg:px-[100px]'>
           <div className='w-[60%] lg:w-full ps-0 lg:ps-5'>
             <h1 className='text-[64px] 2xl:text-[80px] -tracking-[4px] font-bold pb-2'>
               {bannerContent?.title}

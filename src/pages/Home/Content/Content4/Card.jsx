@@ -2,10 +2,17 @@ import React from "react";
 import { Button2 } from "../../../../utils/Button";
 
 const Card = ({ width, height, title, subTitle, background }) => {
+  
+  const cardBgStyle = {
+    backgroundImage: `url(${background})`,
+    backgroundSize: 'cover',
+    backgroundPosition: 'center center',
+  };
   const subTitleLineBreak = subTitle?.split(" ");
   return (
     <div
-      className={`${background} ${width} ${height} flex md:flex-col justify-center items-center gap-4 py-5 px-5`}
+    style={cardBgStyle}
+      className={`${width} ${height} flex md:flex-col justify-center items-center gap-4 py-5 px-5`}
     >
       <div className='flex flex-col items-start md:items-center gap-3 w-[80%] md:w-full'>
         <h1 className='text-[32px] 2xl:text-[40px] text-white font-bold'>

@@ -6,7 +6,7 @@ import { FaArrowRight } from "react-icons/fa";
 const Index = () => {
   const [showMoreToggle, setShowMoreToggle] = useState(false);
   return (
-    <div className='flex flex-col-reverse lg:flex-row lg:justify-between gap-3 py-10 w-full px-[30px]  lg:px-[100px] 2xl:px-[120px]'>
+    <div className='flex flex-col-reverse lg:flex-row lg:justify-between gap-3 py-10 w-full px-[30px]  lg:px-[100px] '>
       {/* box 1 */}
       <div className='border border-neutral-300 px-4 py-10 w-full lg:w-1/2  h-[700px]'>
         <div className='flex justify-between items-center'>

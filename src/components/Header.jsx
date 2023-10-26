@@ -97,7 +97,7 @@ const Header = () => {
             } `}
             onClick={() => setaccordian(!accordian)}
           >
-            <h1 className='mb-5 flex gap-2 items-center font-bold text-[48px]'>
+            <h1 className='mb-5 flex gap-2 items-center font-bold text-lg sm:text-[48px]'>
               몽골 IT 아웃소싱
               <BsChevronDown
                 className={`transition-all duration-300 text-2xl ${
@@ -127,36 +127,35 @@ const Header = () => {
             </div>
           </div>
           <div className='w-full h-[50px]'>
-            <h1 className='mb-5 flex gap-2 items-center font-bold text-[48px]'>
+            <h1 className='mb-5 flex gap-2 items-center font-bold text-lg sm:text-[48px]'>
               미얀마 퍼블리셔 아웃소싱
               <BsChevronDown className='text-2xl' />
             </h1>
           </div>
           <div className='w-full h-[50px]'>
-            <h1 className='mb-5 flex gap-2 items-center font-bold text-[48px]'>
+            <h1 className='mb-5 flex gap-2 items-center font-bold text-lg sm:text-[48px]'>
             <div className='w-full'>
-            <h1 className='mb-5 flex gap-2 items-center font-bold text-[48px]'>
+            <h1 className='mb-5 flex gap-2 items-center font-bold text-lg sm:text-[48px]'>
               미얀마 퍼블리셔 아웃소싱
               <BsChevronDown className='text-2xl' />
             </h1>
           </div>
-              <BsChevronDown className='text-2xl' />
             </h1>
           </div>
           <div className='w-full h-[50px]'>
-            <h1 className='mb-5 flex gap-2 items-center font-bold text-[48px]'>
+            <h1 className='mb-5 flex gap-2 items-center font-bold text-lg sm:text-[48px]'>
             포트폴리오
               <BsChevronDown className='text-2xl' />
             </h1>
           </div>
           <div className='w-full h-[50px]'>
-            <h1 className='mb-5 flex gap-2 items-center font-bold text-[48px]'>
+            <h1 className='mb-5 flex gap-2 items-center font-bold text-lg sm:text-[48px]'>
             고객센터
               <BsChevronDown className='text-2xl' />
             </h1>
           </div>
           <div className='w-full h-[50px]'>
-            <h1 className='mb-5 flex gap-2 items-center font-bold text-[48px]'>
+            <h1 className='mb-5 flex gap-2 items-center font-bold text-lg sm:text-[48px]'>
             회사소개
               <BsChevronDown className='text-2xl' />
             </h1>
